@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -17,6 +17,24 @@
 		81750CC92453306F000C6297 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 81750CC72453306F000C6297 /* LaunchScreen.storyboard */; };
 		81750CD424533070000C6297 /* ios_assignmentTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81750CD324533070000C6297 /* ios_assignmentTests.swift */; };
 		81750CDF24533070000C6297 /* ios_assignmentUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81750CDE24533070000C6297 /* ios_assignmentUITests.swift */; };
+		81750CF4245337C2000C6297 /* ConfigureService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81750CF3245337C2000C6297 /* ConfigureService.swift */; };
+		81750CF6245338B3000C6297 /* Auth.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 81750CF5245338B3000C6297 /* Auth.storyboard */; };
+		81750CFA245339E2000C6297 /* LoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81750CF9245339E2000C6297 /* LoginVC.swift */; };
+		81750CFD24534276000C6297 /* MainVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81750CFC24534276000C6297 /* MainVC.swift */; };
+		81750D0024538002000C6297 /* CustomUIButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81750CFF24538001000C6297 /* CustomUIButton.swift */; };
+		81750D022453820B000C6297 /* CustomUIImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81750D012453820B000C6297 /* CustomUIImageView.swift */; };
+		81750D0424538A4D000C6297 /* MainTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81750D0324538A4D000C6297 /* MainTVC.swift */; };
+		81750D0624539E97000C6297 /* Hotel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81750D0524539E97000C6297 /* Hotel.swift */; };
+		81750D0824539FA4000C6297 /* Image.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81750D0724539FA4000C6297 /* Image.swift */; };
+		81750D0A2453A143000C6297 /* BaseResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81750D092453A143000C6297 /* BaseResponse.swift */; };
+		81750D0C2453A3CF000C6297 /* ApiControler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81750D0B2453A3CF000C6297 /* ApiControler.swift */; };
+		81750D0E2453A6D8000C6297 /* LoadingDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81750D0D2453A6D8000C6297 /* LoadingDelegate.swift */; };
+		81750D102453AA42000C6297 /* Reachability.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81750D0F2453AA42000C6297 /* Reachability.swift */; };
+		81750D122453AA98000C6297 /* Handlers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81750D112453AA98000C6297 /* Handlers.swift */; };
+		81750D142453AB44000C6297 /* AlertProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81750D132453AB44000C6297 /* AlertProvider.swift */; };
+		81750D162453ABBC000C6297 /* Identifiers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81750D152453ABBC000C6297 /* Identifiers.swift */; };
+		81C6B0612453D18B00DDCA51 /* HotelnfoVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81C6B0602453D18B00DDCA51 /* HotelnfoVC.swift */; };
+		81C6B0642453D1FB00DDCA51 /* MapVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81C6B0632453D1FB00DDCA51 /* MapVC.swift */; };
 		9CC289B2AB6A093A018F4886 /* Pods_ios_assignment_ios_assignmentUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F654CD68433B9782292E7E34 /* Pods_ios_assignment_ios_assignmentUITests.framework */; };
 /* End PBXBuildFile section */
 
@@ -60,6 +78,24 @@
 		81750CDA24533070000C6297 /* ios_assignmentUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ios_assignmentUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		81750CDE24533070000C6297 /* ios_assignmentUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ios_assignmentUITests.swift; sourceTree = "<group>"; };
 		81750CE024533070000C6297 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		81750CF3245337C2000C6297 /* ConfigureService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfigureService.swift; sourceTree = "<group>"; };
+		81750CF5245338B3000C6297 /* Auth.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Auth.storyboard; sourceTree = "<group>"; };
+		81750CF9245339E2000C6297 /* LoginVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginVC.swift; sourceTree = "<group>"; };
+		81750CFC24534276000C6297 /* MainVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainVC.swift; sourceTree = "<group>"; };
+		81750CFF24538001000C6297 /* CustomUIButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomUIButton.swift; sourceTree = "<group>"; };
+		81750D012453820B000C6297 /* CustomUIImageView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomUIImageView.swift; sourceTree = "<group>"; };
+		81750D0324538A4D000C6297 /* MainTVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTVC.swift; sourceTree = "<group>"; };
+		81750D0524539E97000C6297 /* Hotel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Hotel.swift; sourceTree = "<group>"; };
+		81750D0724539FA4000C6297 /* Image.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Image.swift; sourceTree = "<group>"; };
+		81750D092453A143000C6297 /* BaseResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseResponse.swift; sourceTree = "<group>"; };
+		81750D0B2453A3CF000C6297 /* ApiControler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiControler.swift; sourceTree = "<group>"; };
+		81750D0D2453A6D8000C6297 /* LoadingDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingDelegate.swift; sourceTree = "<group>"; };
+		81750D0F2453AA42000C6297 /* Reachability.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Reachability.swift; sourceTree = "<group>"; };
+		81750D112453AA98000C6297 /* Handlers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Handlers.swift; sourceTree = "<group>"; };
+		81750D132453AB44000C6297 /* AlertProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertProvider.swift; sourceTree = "<group>"; };
+		81750D152453ABBC000C6297 /* Identifiers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Identifiers.swift; sourceTree = "<group>"; };
+		81C6B0602453D18B00DDCA51 /* HotelnfoVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HotelnfoVC.swift; sourceTree = "<group>"; };
+		81C6B0632453D1FB00DDCA51 /* MapVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapVC.swift; sourceTree = "<group>"; };
 		F654CD68433B9782292E7E34 /* Pods_ios_assignment_ios_assignmentUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ios_assignment_ios_assignmentUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -110,6 +146,7 @@
 				81750CBA2453306C000C6297 /* Products */,
 				E8537B1BE418379AE8B4DC16 /* Pods */,
 				211EE3E4C3C52B49070192B0 /* Frameworks */,
+				81750CFE24537FF0000C6297 /* CustomUI */,
 			);
 			sourceTree = "<group>";
 		};
@@ -126,13 +163,13 @@
 		81750CBB2453306C000C6297 /* ios_assignment */ = {
 			isa = PBXGroup;
 			children = (
-				81750CF224533514000C6297 /* Libraries */,
 				81750CF1245334B3000C6297 /* SuportFiles */,
 				81750CF0245334B0000C6297 /* Storyboards */,
 				81750CEF245334AC000C6297 /* Models */,
 				81750CEE245334A8000C6297 /* Views+ViewModels */,
 				81750CED2453349C000C6297 /* Utilities */,
 				81750CEC24533498000C6297 /* Networking */,
+				81750CF224533514000C6297 /* Libraries */,
 				81750CC02453306C000C6297 /* ViewController.swift */,
 			);
 			path = ios_assignment;
@@ -159,6 +196,7 @@
 		81750CEC24533498000C6297 /* Networking */ = {
 			isa = PBXGroup;
 			children = (
+				81750D0B2453A3CF000C6297 /* ApiControler.swift */,
 			);
 			path = Networking;
 			sourceTree = "<group>";
@@ -166,6 +204,12 @@
 		81750CED2453349C000C6297 /* Utilities */ = {
 			isa = PBXGroup;
 			children = (
+				81750CF3245337C2000C6297 /* ConfigureService.swift */,
+				81750D0D2453A6D8000C6297 /* LoadingDelegate.swift */,
+				81750D0F2453AA42000C6297 /* Reachability.swift */,
+				81750D112453AA98000C6297 /* Handlers.swift */,
+				81750D132453AB44000C6297 /* AlertProvider.swift */,
+				81750D152453ABBC000C6297 /* Identifiers.swift */,
 			);
 			path = Utilities;
 			sourceTree = "<group>";
@@ -173,6 +217,8 @@
 		81750CEE245334A8000C6297 /* Views+ViewModels */ = {
 			isa = PBXGroup;
 			children = (
+				81750CF824533966000C6297 /* Main */,
+				81750CF724533956000C6297 /* Auth */,
 			);
 			path = "Views+ViewModels";
 			sourceTree = "<group>";
@@ -180,6 +226,9 @@
 		81750CEF245334AC000C6297 /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				81750D0524539E97000C6297 /* Hotel.swift */,
+				81750D0724539FA4000C6297 /* Image.swift */,
+				81750D092453A143000C6297 /* BaseResponse.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -189,6 +238,7 @@
 			children = (
 				81750CC72453306F000C6297 /* LaunchScreen.storyboard */,
 				81750CC22453306C000C6297 /* Main.storyboard */,
+				81750CF5245338B3000C6297 /* Auth.storyboard */,
 			);
 			path = Storyboards;
 			sourceTree = "<group>";
@@ -196,10 +246,10 @@
 		81750CF1245334B3000C6297 /* SuportFiles */ = {
 			isa = PBXGroup;
 			children = (
+				81750CCA2453306F000C6297 /* Info.plist */,
 				81750CBC2453306C000C6297 /* AppDelegate.swift */,
 				81750CBE2453306C000C6297 /* SceneDelegate.swift */,
 				81750CC52453306F000C6297 /* Assets.xcassets */,
-				81750CCA2453306F000C6297 /* Info.plist */,
 			);
 			path = SuportFiles;
 			sourceTree = "<group>";
@@ -209,6 +259,58 @@
 			children = (
 			);
 			path = Libraries;
+			sourceTree = "<group>";
+		};
+		81750CF724533956000C6297 /* Auth */ = {
+			isa = PBXGroup;
+			children = (
+				81750CF9245339E2000C6297 /* LoginVC.swift */,
+			);
+			path = Auth;
+			sourceTree = "<group>";
+		};
+		81750CF824533966000C6297 /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				81750CFB24534250000C6297 /* Main */,
+				81C6B05F2453D14D00DDCA51 /* Info */,
+				81C6B0622453D1D300DDCA51 /* Map */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		81750CFB24534250000C6297 /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				81750CFC24534276000C6297 /* MainVC.swift */,
+				81750D0324538A4D000C6297 /* MainTVC.swift */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		81750CFE24537FF0000C6297 /* CustomUI */ = {
+			isa = PBXGroup;
+			children = (
+				81750CFF24538001000C6297 /* CustomUIButton.swift */,
+				81750D012453820B000C6297 /* CustomUIImageView.swift */,
+			);
+			path = CustomUI;
+			sourceTree = "<group>";
+		};
+		81C6B05F2453D14D00DDCA51 /* Info */ = {
+			isa = PBXGroup;
+			children = (
+				81C6B0602453D18B00DDCA51 /* HotelnfoVC.swift */,
+			);
+			path = Info;
+			sourceTree = "<group>";
+		};
+		81C6B0622453D1D300DDCA51 /* Map */ = {
+			isa = PBXGroup;
+			children = (
+				81C6B0632453D1FB00DDCA51 /* MapVC.swift */,
+			);
+			path = Map;
 			sourceTree = "<group>";
 		};
 		E8537B1BE418379AE8B4DC16 /* Pods */ = {
@@ -235,6 +337,7 @@
 				81750CB52453306C000C6297 /* Sources */,
 				81750CB62453306C000C6297 /* Frameworks */,
 				81750CB72453306C000C6297 /* Resources */,
+				9825324A62D6BEBBB22AA7CD /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -272,6 +375,7 @@
 				81750CD624533070000C6297 /* Sources */,
 				81750CD724533070000C6297 /* Frameworks */,
 				81750CD824533070000C6297 /* Resources */,
+				F50999EE0CD98C3C9745E2B5 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -331,6 +435,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				81750CF6245338B3000C6297 /* Auth.storyboard in Resources */,
 				81750CC92453306F000C6297 /* LaunchScreen.storyboard in Resources */,
 				81750CC62453306F000C6297 /* Assets.xcassets in Resources */,
 				81750CC42453306C000C6297 /* Main.storyboard in Resources */,
@@ -398,6 +503,23 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
+		9825324A62D6BEBBB22AA7CD /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ios_assignment/Pods-ios_assignment-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ios_assignment/Pods-ios_assignment-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-ios_assignment/Pods-ios_assignment-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		A3A7070FAD66C751A8406BC8 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -420,6 +542,23 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
+		F50999EE0CD98C3C9745E2B5 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ios_assignment-ios_assignmentUITests/Pods-ios_assignment-ios_assignmentUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ios_assignment-ios_assignmentUITests/Pods-ios_assignment-ios_assignmentUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-ios_assignment-ios_assignmentUITests/Pods-ios_assignment-ios_assignmentUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -427,9 +566,26 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				81750D0C2453A3CF000C6297 /* ApiControler.swift in Sources */,
+				81750D0624539E97000C6297 /* Hotel.swift in Sources */,
+				81750CF4245337C2000C6297 /* ConfigureService.swift in Sources */,
+				81750D0424538A4D000C6297 /* MainTVC.swift in Sources */,
+				81750D162453ABBC000C6297 /* Identifiers.swift in Sources */,
+				81C6B0642453D1FB00DDCA51 /* MapVC.swift in Sources */,
+				81C6B0612453D18B00DDCA51 /* HotelnfoVC.swift in Sources */,
+				81750D142453AB44000C6297 /* AlertProvider.swift in Sources */,
+				81750D0A2453A143000C6297 /* BaseResponse.swift in Sources */,
+				81750D022453820B000C6297 /* CustomUIImageView.swift in Sources */,
+				81750D0024538002000C6297 /* CustomUIButton.swift in Sources */,
+				81750D0E2453A6D8000C6297 /* LoadingDelegate.swift in Sources */,
+				81750D102453AA42000C6297 /* Reachability.swift in Sources */,
+				81750CFD24534276000C6297 /* MainVC.swift in Sources */,
+				81750D122453AA98000C6297 /* Handlers.swift in Sources */,
 				81750CC12453306C000C6297 /* ViewController.swift in Sources */,
 				81750CBD2453306C000C6297 /* AppDelegate.swift in Sources */,
 				81750CBF2453306C000C6297 /* SceneDelegate.swift in Sources */,
+				81750D0824539FA4000C6297 /* Image.swift in Sources */,
+				81750CFA245339E2000C6297 /* LoginVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
