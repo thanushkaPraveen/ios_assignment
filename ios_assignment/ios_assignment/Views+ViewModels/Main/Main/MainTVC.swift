@@ -7,7 +7,6 @@
 //
 
 import UIKit
-import Kingfisher
 
 class MainTVC: UITableViewCell {
     
@@ -18,17 +17,15 @@ class MainTVC: UITableViewCell {
 
     override func awakeFromNib() {
         super.awakeFromNib()
-        // Initialization code
     }
 
     override func setSelected(_ selected: Bool, animated: Bool) {
         super.setSelected(selected, animated: animated)
-
-        // Configure the view for the selected state
     }
     
+    // set main table view properties
     func configureCell(hotel:Hotel) {
-        print(hotel.image!.large)
+        
         roundIv.setImageView(img: hotel.image!.small!)
         titleLbl.text = hotel.title
         addressLbl.text = hotel.address

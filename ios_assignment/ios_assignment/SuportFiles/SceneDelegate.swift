@@ -52,20 +52,14 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         // Use this method to save data, release shared resources, and store enough scene-specific state information
         // to restore the scene back to its current state.
     }
-
-
-
-    // Swift
-    // SceneDelegate.swift
-          
+    
+    // fb configaration
     func scene(
-        _ scene: UIScene,
-        openURLContexts URLContexts: Set<UIOpenURLContext>
-    ) {
+        _ scene: UIScene,openURLContexts URLContexts: Set<UIOpenURLContext>) {
         guard let context = URLContexts.first else {
             return
         }
-
+        
         ApplicationDelegate.shared.application(
             UIApplication.shared,
             open: context.url,

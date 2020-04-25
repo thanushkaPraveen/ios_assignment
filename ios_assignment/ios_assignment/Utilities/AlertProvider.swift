@@ -109,6 +109,28 @@ class AlertProvider {
             _tvc?.present(alertController, animated: true, completion: nil)
         }
     }
+    
+    func showConfirmationAlert(title: String, message: String, cancelTitle: String, okTitle: String, completion: @escaping (_ action: UIAlertAction) -> ()) {
+        
+        let alertController = UIAlertController(title: title, message: message, preferredStyle: UIAlertController.Style.alert)
+        
+        let cancelAction = UIAlertAction(title: cancelTitle, style: .cancel) { (action: UIAlertAction) in
+            completion(action)
+        }
+        
+        let okAction = UIAlertAction(title: okTitle, style: .default) { (action: UIAlertAction) in
+            completion(action)
+        }
+        
+        alertController.addAction(cancelAction)
+        alertController.addAction(okAction)
+        
+        if _vc != nil {
+            _vc?.present(alertController, animated: true, completion: nil)
+        } else {
+            _tvc?.present(alertController, animated: true, completion: nil)
+        }
+    }
 }
 
 struct AlertAction {

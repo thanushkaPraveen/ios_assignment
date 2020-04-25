@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="14l-Dd-ze1">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="14l-Dd-ze1">
     <device id="retina4_7" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15703"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -68,7 +68,7 @@
                                 <rect key="frame" x="0.0" y="152" width="375" height="515"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" restorationIdentifier="MainTVC" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="MainTVC" id="Kty-2f-MRS" customClass="MainTVC" customModule="ios_assignment" customModuleProvider="target">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" restorationIdentifier="MainTVC" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" reuseIdentifier="MainTVC" id="Kty-2f-MRS" customClass="MainTVC" customModule="ios_assignment" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="28" width="375" height="70"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Kty-2f-MRS" id="CP7-rh-AIF">
@@ -174,7 +174,9 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="MNm-5j-GLp"/>
                     </view>
-                    <navigationItem key="navigationItem" title="List View" id="rtd-2H-HQ4"/>
+                    <navigationItem key="navigationItem" title="List View" id="rtd-2H-HQ4">
+                        <barButtonItem key="backBarButtonItem" title=" " id="C1Q-ke-hAn"/>
+                    </navigationItem>
                     <connections>
                         <outlet property="emailLbl" destination="TuO-9M-2pY" id="VJ8-Uc-fFa"/>
                         <outlet property="tableView" destination="Ew0-o8-ECV" id="JkN-14-hkk"/>
@@ -228,6 +230,7 @@
                         <viewLayoutGuide key="safeArea" id="e2L-uM-bWL"/>
                     </view>
                     <navigationItem key="navigationItem" title="Details" id="OIO-zN-0tB">
+                        <barButtonItem key="backBarButtonItem" title=" " id="Cem-Rf-64S"/>
                         <barButtonItem key="rightBarButtonItem" title="Item" image="loc" id="vsq-GO-8aM">
                             <connections>
                                 <action selector="didTapOnLocation:" destination="a77-cs-BDR" id="7qY-BV-ii0"/>

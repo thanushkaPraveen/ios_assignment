@@ -21,6 +21,7 @@ class Image: NSObject, Codable, Mappable {
         self.init()
     }
 
+     //MARK: 1. Mapping local variable with api body
     func mapping(map: Map) {
         
         small     <- map["small"]

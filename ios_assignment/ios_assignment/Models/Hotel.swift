@@ -10,7 +10,7 @@ import UIKit
 import SwiftyJSON
 import ObjectMapper
 
-class Hotel: NSObject, Codable, Mappable  {
+class Hotel: NSObject, Mappable  {
 
     var id:String?
     var title:String?
@@ -21,23 +21,13 @@ class Hotel: NSObject, Codable, Mappable  {
     var latitude:String?
     var longitude:String?
     var image:Image?
-//    var image:Image?
     
-    
-    func getHotel(data:Data) -> BaseResponse<Hotel> {
-       do {
-           let decoder = JSONDecoder()
-           return try decoder.decode(BaseResponse.self , from: data) // var response:BaseResponse<User> = try decoder.decode(BaseResponse.self , from: data)
-       } catch  {
-           print(error)
-       }
-       return BaseResponse()
-   }
     
     required convenience init?(map: Map) {
         self.init()
     }
 
+    //MARK: 1. Mapping local variable with api body
     func mapping(map: Map) {
         
         id           <- map["id"]
@@ -52,6 +42,7 @@ class Hotel: NSObject, Codable, Mappable  {
         
     }
     
+    // get mapable hotel array
     class func mapHotelData(json: JSON) -> [Hotel] {
         print("HOTEL LIST JSON:\(json)")
         var hotelArray:[Hotel] = []

@@ -24,3 +24,4 @@ let noAction = "No"
 let dismissAction = "Dismiss"
 
 
+let logoutConfirmation = "Are you sure you want to logout?"
