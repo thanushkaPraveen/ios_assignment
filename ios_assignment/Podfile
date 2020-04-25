@@ -12,7 +12,7 @@ target 'ios_assignment' do
   pod 'ObjectMapper'
   pod 'RappleProgressHUD'
   pod 'Kingfisher'
-
+  pod 'AlamofireImage'
 
 
   # Pods for ios_assignment

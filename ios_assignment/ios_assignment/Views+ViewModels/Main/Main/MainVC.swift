@@ -9,13 +9,16 @@
 
 import UIKit
 import SwiftyJSON
-
+import FBSDKLoginKit
 
 class MainVC: UIViewController,  UITableViewDataSource , UITableViewDelegate, LoadingIndicatorDelegate  {
 
     var hotel:[Hotel] = []
     var sigleHotel:Hotel?
 
+    @IBOutlet weak var userNameLbl: UILabel!
+    @IBOutlet weak var emailLbl: UILabel!
+    
     @IBOutlet weak var tableView: UITableView!
     
     override func viewDidLoad() {
@@ -23,6 +26,11 @@ class MainVC: UIViewController,  UITableViewDataSource , UITableViewDelegate, Lo
         
         hotelRequest()
         // Do any additional setup after loading the view.
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        //set user detail
+        setUserDetails()
     }
     
     func numberOfSections(in tableView: UITableView) -> Int {
@@ -110,6 +118,30 @@ class MainVC: UIViewController,  UITableViewDataSource , UITableViewDelegate, Lo
         }
     }
     
-
+    @IBAction func taoOnLogout(_ sender: Any) {
+        let loginManager = LoginManager()
+        loginManager.logOut()
+        ConfigureService.shared.manageUserDirection()
+    }
+    
+    func setUserDetails()  {
+         let graphRequest = GraphRequest(graphPath: "me", parameters: ["fields": "id,name , first_name, last_name , email"], tokenString: AccessToken.current?.tokenString, version: nil, httpMethod: HTTPMethod(rawValue: "GET"))
+           graphRequest.start(completionHandler: { (test, result, error) in
+           guard let Info = result as? [String: Any] else { return }
+           
+            if let userName = Info["name"] as? String
+            {
+                self.userNameLbl.text = userName
+                
+            }
+            
+            if let email = Info["email"] as? String
+            {
+                self.emailLbl.text = email
+                
+            }
+        })
+    }
+    
 }
 

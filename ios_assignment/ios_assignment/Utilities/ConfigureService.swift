@@ -7,6 +7,8 @@
 //
 
 import UIKit
+import FBSDKLoginKit
+import FBSDKCoreKit
 
 enum Storyboard: String {
     case Auth
@@ -40,19 +42,21 @@ class ConfigureService {
        }
     
     // fucntion to handle User Direction
-       public func manageUserDirection(from vc: UIViewController? = nil, window: UIWindow? = nil) {
+       public func manageUserDirection(from vc: UIViewController? = nil, window: UIWindow? = nil ) {
         
-        let flag:Bool = true
-        
-            if(flag){
-                directToPath(in: .Main, for: "MainNC", from: vc, window: window)
-                //directToPath(in: .Drawer, for: "SideMenuConfigurationVC", from: vc, window: window)
-                
-                return
-            }
-         
+       //check face book tacken is expierd  or not
+       if let token = AccessToken.current,
+           !token.isExpired {
+            directToPath(in: .Main, for: "MainNC", from: vc, window: window)
+            return
+       }
+        directToPath(in: .Auth, for: "AuthVC", from: vc, window: window)
 
        }
+    
+    func fbLogPath()  {
+        directToPath(in: .Main, for: "MainNC")
+    }
        
     // Direct to Main Root window
        public func directToPath(in sb: Storyboard, for identifier: String, from vc: UIViewController? = nil, window: UIWindow? = nil) {

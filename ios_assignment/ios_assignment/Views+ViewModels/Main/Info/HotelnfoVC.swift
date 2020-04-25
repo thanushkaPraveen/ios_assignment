@@ -20,9 +20,12 @@ class HotelnfoVC: UIViewController {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
-        
+        print(hotel?.image)
         titleLbl.text = hotel!.title ?? "No Title"
         disLbl.text = hotel!.dis ?? "No infomation"
+        let paseholder = UIImage(named: "paseholder")!
+        print(hotel!.image!.large)
+        infoIV.setImageWithUrl(hotel!.image!.large ?? "", placeholderImage: paseholder)
     }
     
 

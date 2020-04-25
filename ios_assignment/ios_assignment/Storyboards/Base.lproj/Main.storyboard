@@ -46,6 +46,9 @@
                                                 <real key="value" value="5"/>
                                             </userDefinedRuntimeAttribute>
                                         </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="taoOnLogout:" destination="a1a-m6-vQS" eventType="touchUpInside" id="H9i-IH-Swu"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
@@ -173,7 +176,9 @@
                     </view>
                     <navigationItem key="navigationItem" title="List View" id="rtd-2H-HQ4"/>
                     <connections>
+                        <outlet property="emailLbl" destination="TuO-9M-2pY" id="VJ8-Uc-fFa"/>
                         <outlet property="tableView" destination="Ew0-o8-ECV" id="JkN-14-hkk"/>
+                        <outlet property="userNameLbl" destination="DwH-wS-H5K" id="CKU-aB-uvk"/>
                         <segue destination="a77-cs-BDR" kind="push" identifier="MainVCToHotelInfoVC" id="zZc-c9-0kT"/>
                     </connections>
                 </viewController>

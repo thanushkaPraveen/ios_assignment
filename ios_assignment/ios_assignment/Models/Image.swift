@@ -23,9 +23,9 @@ class Image: NSObject, Codable, Mappable {
 
     func mapping(map: Map) {
         
-        small        <- map["small"]
-        medium       <- map["medium"]
-        medium       <- map["description"]
+        small     <- map["small"]
+        medium    <- map["medium"]
+        large     <- map["large"]
         
     }
     

@@ -23,25 +23,6 @@ class LoginVC: UIViewController {
         
         // Do any additional setup after loading the view.
     }
-    
-    override func viewWillAppear(_ animated: Bool) {
-
-    }
-    
-    
-    @IBAction func tapOnFaceBook(_ sender: Any) {
-        
-            let r = GraphRequest(graphPath: "me", parameters: ["fields":"email,name"], tokenString: AccessToken.current?.tokenString, version: nil, httpMethod: HTTPMethod(rawValue: "GET"))
-
-            r.start(completionHandler: { (test, result, error) in
-                if(error == nil)
-                {
-                    print(result)
-                }
-            })
-        
-    }
-    
     /*
     // MARK: - Navigation
 

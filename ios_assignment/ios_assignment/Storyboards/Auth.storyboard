@@ -11,20 +11,10 @@
         <!--LoginVC-->
         <scene sceneID="sdy-Th-Ngq">
             <objects>
-                <viewController id="qPT-dC-rdN" customClass="LoginVC" customModule="ios_assignment" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="AuthVC" id="qPT-dC-rdN" customClass="LoginVC" customModule="ios_assignment" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="gle-iO-Wj6">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YWr-dk-bag">
-                                <rect key="frame" x="173" y="437" width="46" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button"/>
-                                <connections>
-                                    <action selector="tapOnFaceBook:" destination="qPT-dC-rdN" eventType="touchUpInside" id="4Gc-A2-jIL"/>
-                                </connections>
-                            </button>
-                        </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <viewLayoutGuide key="safeArea" id="TaI-ta-CBJ"/>
                     </view>

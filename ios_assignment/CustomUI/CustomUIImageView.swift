@@ -8,7 +8,8 @@
 
 import UIKit
 import Kingfisher
-
+import Alamofire
+import AlamofireImage
 
 @IBDesignable class CustomUIImageView: UIImageView {
 
@@ -37,22 +38,30 @@ import Kingfisher
     
     func setImageView(img:String)  {
 //        let url = URL(string: "http://lorempixel.com/200/200/cats/1/")
-//        let image = UIImage(named: "paseholder")
+        let paseholder = UIImage(named: "paseholder")!
 //        kf.setImage(with: url, placeholder: image)
-        setImage(from: img)
+        setImageWithUrl(img, placeholderImage: paseholder)
         
     }
+}
+
+extension UIImageView {
+    func setImageWithUrl(_ urlString: String, placeholderImage: UIImage = UIImage()) {
+        if let url = URL(string: urlString) {
+            self.af_setImage(withURL: url, placeholderImage: placeholderImage)
     
-    func setImage(from url: String) {
-        guard let imageURL = URL(string: url) else { return }
+        }
+    }
+}
 
-            // just not to cause a deadlock in UI!
-        DispatchQueue.global().async {
-            guard let imageData = try? Data(contentsOf: imageURL) else { return }
-
-            let im = UIImage(data: imageData)
-            DispatchQueue.main.async {
-                self.image = im
+extension UIButton {
+    func setImageWithUrl(_ urlString: String, isBackground: Bool = false, state: UIControl.State = .normal, placeholderImage: UIImage = UIImage()) {
+        if let url = URL(string: urlString) {
+            switch isBackground {
+            case true:
+                self.af_setBackgroundImage(for: state, url: url, placeholderImage: placeholderImage)
+            default:
+                self.af_setImage(for: state, url: url, placeholderImage: placeholderImage)
             }
         }
     }

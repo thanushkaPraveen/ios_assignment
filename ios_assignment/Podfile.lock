@@ -1,5 +1,7 @@
 PODS:
   - Alamofire (4.9.1)
+  - AlamofireImage (3.6.0):
+    - Alamofire (~> 4.9)
   - FBSDKCoreKit (6.5.1):
     - FBSDKCoreKit/Basics (= 6.5.1)
     - FBSDKCoreKit/Core (= 6.5.1)
@@ -21,6 +23,7 @@ PODS:
 
 DEPENDENCIES:
   - Alamofire
+  - AlamofireImage
   - FBSDKCoreKit
   - FBSDKLoginKit
   - FBSDKShareKit
@@ -32,6 +35,7 @@ DEPENDENCIES:
 SPEC REPOS:
   trunk:
     - Alamofire
+    - AlamofireImage
     - FBSDKCoreKit
     - FBSDKLoginKit
     - FBSDKShareKit
@@ -42,6 +46,7 @@ SPEC REPOS:
 
 SPEC CHECKSUMS:
   Alamofire: 85e8a02c69d6020a0d734f6054870d7ecb75cf18
+  AlamofireImage: be9963c6582d68b39e89191f64c82a7d7bf40fdd
   FBSDKCoreKit: 3ecb604427e115bd90ff7fc62ee1e30ebd12285b
   FBSDKLoginKit: 8b2bc5fa30ea269e9d7208a1165c0a668c0ae826
   FBSDKShareKit: 9ad7b8d097fc568e911452feb8112ad7f04bb8a2
@@ -50,6 +55,6 @@ SPEC CHECKSUMS:
   RappleProgressHUD: 1d97178abc04ea9e89e4df74227064ded389ce24
   SwiftyJSON: 36413e04c44ee145039d332b4f4e2d3e8d6c4db7
 
-PODFILE CHECKSUM: 4382a0b5fc76e2d956605507212a62556af74017
+PODFILE CHECKSUM: 6fca8d1e01f05f4c39754e4b58af6a157d04e903
 
 COCOAPODS: 1.9.1
