@@ -30,19 +30,23 @@ class MainVC: UIViewController, LoadingIndicatorDelegate  {
         setUserDetails()
     }
     
+    override func viewWillAppear(_ animated: Bool) {
+        //set user details
+        setUserDetails()
+    }
     
     //MARK: fucntion to set user detels getting loged fb details
     func setUserDetails()  {
         // get fb login user details
          let graphRequest = GraphRequest(graphPath: "me", parameters: ["fields": "id,name , first_name, last_name , email"], tokenString: AccessToken.current?.tokenString, version: nil, httpMethod: HTTPMethod(rawValue: "GET"))
            graphRequest.start(completionHandler: { (test, result, error) in
-           guard let Info = result as? [String: Any] else { return }
+            let Info = result as? [String: Any]
            
             //set user name and password
-            let userName = Info["name"] as? String
-            self.userNameLbl.text = userName
+            let userName = Info?["name"] as? String
+            self.userNameLbl.text = userName ?? ""
             
-            let email = Info["email"] as? String
+            let email = Info?["email"] as? String
             self.emailLbl.text = email ?? ""
             
         })
@@ -60,24 +64,6 @@ class MainVC: UIViewController, LoadingIndicatorDelegate  {
             else {
                 // Dismiss alert
             }
-        })
-    }
-
-    @IBAction func test(_ sender: Any) {
-        fetchProfile()
-    }
-    
-    func fetchProfile(){
-        GraphRequest(graphPath: "/me", parameters: ["fields" : "email, name, id, gender"])
-        .start(completionHandler:  { (connection, result, error) in
-            guard let result = result as? NSDictionary, let email = result["email"] as? String,
-                let user_name = result["name"] as? String
-                else {
-                    return
-            }
-            
-            print(email)
-            print(user_name)
         })
     }
     
