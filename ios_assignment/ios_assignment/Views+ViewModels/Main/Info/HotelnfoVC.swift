@@ -27,8 +27,7 @@ class HotelnfoVC: UIViewController {
         // Do any additional setup after loading the view.
        titleLbl.text = hotel!.title ?? "No Title"
        disLbl.text = hotel!.dis ?? "No infomation"
-       let paseholder = UIImage(named: "paseholder")!
-       infoIV.setImageWithUrl(hotel!.image!.large ?? "", placeholderImage: paseholder)
+       infoIV.setImageWithUrl(hotel!.image!.large ?? "", placeholderImage: UIImage(named: "paseholder")!)
     }
 
     @IBAction func didTapOnLocation(_ sender: Any) {
@@ -42,6 +41,4 @@ class HotelnfoVC: UIViewController {
             destination.hotel = self.hotel!
          }
     }
-    
-
 }

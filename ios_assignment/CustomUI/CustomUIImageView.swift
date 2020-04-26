@@ -49,7 +49,7 @@ extension UIImageView {
     func setImageWithUrl(_ urlString: String, placeholderImage: UIImage = UIImage()) {
         print(urlString)
         if let url = URL(string: urlString) {
-//            sd_setImage(withURL: url, placeholderImage: placeholderImage)
+//            af_setImage(withURL: url, placeholderImage: placeholderImage)
             sd_setImage(with: url, placeholderImage: placeholderImage)
 
         }

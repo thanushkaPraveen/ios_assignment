@@ -98,8 +98,8 @@
                                                                     <rect key="frame" x="0.0" y="0.0" width="255" height="25"/>
                                                                     <subviews>
                                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Down-sized 4thgeneration leverage" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="m81-kn-c29">
-                                                                            <rect key="frame" x="0.0" y="6" width="255" height="13.5"/>
-                                                                            <fontDescription key="fontDescription" type="boldSystem" pointSize="11"/>
+                                                                            <rect key="frame" x="0.0" y="5.5" width="255" height="14.5"/>
+                                                                            <fontDescription key="fontDescription" type="boldSystem" pointSize="12"/>
                                                                             <nil key="textColor"/>
                                                                             <nil key="highlightedColor"/>
                                                                         </label>
@@ -116,8 +116,8 @@
                                                                     <rect key="frame" x="0.0" y="25" width="255" height="25"/>
                                                                     <subviews>
                                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="2755 Raul Estate cscscscscs West Ervin, AZ 14265-2763" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Z48-f8-8EN">
-                                                                            <rect key="frame" x="0.0" y="7" width="255" height="11"/>
-                                                                            <fontDescription key="fontDescription" type="system" pointSize="9"/>
+                                                                            <rect key="frame" x="0.0" y="0.5" width="255" height="24"/>
+                                                                            <fontDescription key="fontDescription" type="system" pointSize="10"/>
                                                                             <nil key="textColor"/>
                                                                             <nil key="highlightedColor"/>
                                                                         </label>

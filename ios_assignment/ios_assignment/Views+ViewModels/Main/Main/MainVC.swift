@@ -22,15 +22,12 @@ class MainVC: UIViewController, LoadingIndicatorDelegate  {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-         // call to get hotel detail api
-        hotelRequest()
-        
-        //set user details
-        setUserDetails()
     }
     
     override func viewWillAppear(_ animated: Bool) {
+        // call to get hotel detail api
+        hotelRequest()
+        
         //set user details
         setUserDetails()
     }
@@ -38,16 +35,16 @@ class MainVC: UIViewController, LoadingIndicatorDelegate  {
     //MARK: fucntion to set user detels getting loged fb details
     func setUserDetails()  {
         // get fb login user details
-         let graphRequest = GraphRequest(graphPath: "me", parameters: ["fields": "id,name , first_name, last_name , email"], tokenString: AccessToken.current?.tokenString, version: nil, httpMethod: HTTPMethod(rawValue: "GET"))
+         let graphRequest = GraphRequest(graphPath: "me", parameters: ["fields": "name,email"], tokenString: AccessToken.current?.tokenString, version: nil, httpMethod: HTTPMethod(rawValue: "GET"))
            graphRequest.start(completionHandler: { (test, result, error) in
             let Info = result as? [String: Any]
            
             //set user name and password
             let userName = Info?["name"] as? String
-            self.userNameLbl.text = userName ?? ""
+            self.userNameLbl.text = userName
             
             let email = Info?["email"] as? String
-            self.emailLbl.text = email ?? ""
+            self.emailLbl.text = email
             
         })
     }
@@ -115,6 +112,7 @@ extension MainVC {
              self.stopLoading()
              if success {
                  self.tableView.reloadData()
+                 self.setUserDetails()
                  print("user logn sucess")
              } else {
                  switch statusCode {
