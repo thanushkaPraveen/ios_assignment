@@ -10,6 +10,7 @@ import UIKit
 import Kingfisher
 import Alamofire
 import AlamofireImage
+import SDWebImage
 
 @IBDesignable class CustomUIImageView: UIImageView {
 
@@ -37,7 +38,6 @@ import AlamofireImage
     }
     
     func setImageView(img:String)  {
-//        let url = URL(string: "http://lorempixel.com/200/200/cats/1/")
         let paseholder = UIImage(named: "paseholder")!
 //        kf.setImage(with: url, placeholder: image)
         setImageWithUrl(img, placeholderImage: paseholder)
@@ -47,9 +47,11 @@ import AlamofireImage
 
 extension UIImageView {
     func setImageWithUrl(_ urlString: String, placeholderImage: UIImage = UIImage()) {
+        print(urlString)
         if let url = URL(string: urlString) {
-            self.af_setImage(withURL: url, placeholderImage: placeholderImage)
-    
+//            sd_setImage(withURL: url, placeholderImage: placeholderImage)
+            sd_setImage(with: url, placeholderImage: placeholderImage)
+
         }
     }
 }

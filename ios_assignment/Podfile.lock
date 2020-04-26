@@ -19,6 +19,9 @@ PODS:
   - Kingfisher (4.10.1)
   - ObjectMapper (3.5.2)
   - RappleProgressHUD (2.4.1)
+  - SDWebImage (5.7.2):
+    - SDWebImage/Core (= 5.7.2)
+  - SDWebImage/Core (5.7.2)
   - SwiftyJSON (5.0.0)
 
 DEPENDENCIES:
@@ -30,6 +33,7 @@ DEPENDENCIES:
   - Kingfisher
   - ObjectMapper
   - RappleProgressHUD
+  - SDWebImage
   - SwiftyJSON
 
 SPEC REPOS:
@@ -42,6 +46,7 @@ SPEC REPOS:
     - Kingfisher
     - ObjectMapper
     - RappleProgressHUD
+    - SDWebImage
     - SwiftyJSON
 
 SPEC CHECKSUMS:
@@ -53,8 +58,9 @@ SPEC CHECKSUMS:
   Kingfisher: c148cd7b47ebde9989f6bc7c27dcaa79d81279a0
   ObjectMapper: b53ae947d370bf89423e86be7d4e2d2b2a8d3f40
   RappleProgressHUD: 1d97178abc04ea9e89e4df74227064ded389ce24
+  SDWebImage: d9ea4959d99c52276dfada481987018fcaea3d58
   SwiftyJSON: 36413e04c44ee145039d332b4f4e2d3e8d6c4db7
 
-PODFILE CHECKSUM: 6fca8d1e01f05f4c39754e4b58af6a157d04e903
+PODFILE CHECKSUM: 273643b9ba6ca40c9ea65253ca4966e0e9c982f3
 
 COCOAPODS: 1.9.1

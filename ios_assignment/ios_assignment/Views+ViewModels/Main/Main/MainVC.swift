@@ -38,19 +38,13 @@ class MainVC: UIViewController, LoadingIndicatorDelegate  {
            graphRequest.start(completionHandler: { (test, result, error) in
            guard let Info = result as? [String: Any] else { return }
            
-            //set user name
-            if let userName = Info["name"] as? String
-            {
-                self.userNameLbl.text = userName
-                
-            }
+            //set user name and password
+            let userName = Info["name"] as? String
+            self.userNameLbl.text = userName
             
-            // set user email
-            if let email = Info["email"] as? String
-            {
-                self.emailLbl.text = email
-                
-            }
+            let email = Info["email"] as? String
+            self.emailLbl.text = email ?? ""
+            
         })
     }
     
@@ -69,6 +63,24 @@ class MainVC: UIViewController, LoadingIndicatorDelegate  {
         })
     }
 
+    @IBAction func test(_ sender: Any) {
+        fetchProfile()
+    }
+    
+    func fetchProfile(){
+        GraphRequest(graphPath: "/me", parameters: ["fields" : "email, name, id, gender"])
+        .start(completionHandler:  { (connection, result, error) in
+            guard let result = result as? NSDictionary, let email = result["email"] as? String,
+                let user_name = result["name"] as? String
+                else {
+                    return
+            }
+            
+            print(email)
+            print(user_name)
+        })
+    }
+    
     // In a storyboard-based application, you will often want to do a little preparation before navigation
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if segue.identifier == "MainVCToHotelInfoVC" {
@@ -103,6 +115,8 @@ extension MainVC : UITableViewDataSource , UITableViewDelegate {
         //navigate to hotel info view when click on cell
          self.performSegue(withIdentifier: "MainVCToHotelInfoVC", sender: hotel[indexPath.row])
      }
+    
+
 
 }
 

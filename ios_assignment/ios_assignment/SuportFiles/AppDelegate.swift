@@ -33,10 +33,18 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, open url: URL, options: [UIApplication.OpenURLOptionsKey : Any] = [:]) -> Bool {
         let handled = ApplicationDelegate.shared.application(application, open: url, sourceApplication: options[UIApplication.OpenURLOptionsKey.sourceApplication] as! String?, annotation: options[UIApplication.OpenURLOptionsKey.annotation])
-
+        
         // navigate to home when user login via fb
         ConfigureService.shared.goToHome()
         return handled
+    }
+    
+    func applicationDidBecomeActive(_ application: UIApplication) {
+        AppEvents.activateApp()
+    }
+    
+    func applicationWillResignActive(_ application: UIApplication) {
+        AppEvents.activateApp()
     }
     
     //set root view

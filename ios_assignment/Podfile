@@ -13,8 +13,7 @@ target 'ios_assignment' do
   pod 'RappleProgressHUD'
   pod 'Kingfisher'
   pod 'AlamofireImage'
-
-
+  pod 'SDWebImage'
   # Pods for ios_assignment
 
   target 'ios_assignmentTests' do
